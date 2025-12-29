@@ -32,13 +32,13 @@ A production-grade RESTful backend system built with Node.js, Express.js, and Mo
 - **IP Address and User Agent tracking**
 - **Comment ownership** (owner/admin can modify)
 
-### Part 4: Productivity Analytics (50 Minutes)
+### Part 4: Productivity Analytics 
 - **Overview Dashboard** with total tasks, completed tasks, active users
 - **User Productivity Analytics** with completion rates
 - **Task Trending Analysis** for most active tasks in last 7 days
 - **Analytics Collections**: task_activity and daily_task_metrics
 
-### Part 5: Cron Jobs (30 Minutes)
+### Part 5: Cron Jobs 
 - **Daily Productivity Aggregation** (midnight daily, 2min for testing)
 - **Inactive User Detection** (hourly, 1min for testing)
 - **Overdue Task Reminder** (bonus feature, 5min for testing)
