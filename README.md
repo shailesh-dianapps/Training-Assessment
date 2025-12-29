@@ -4,7 +4,7 @@ A production-grade RESTful backend system built with Node.js, Express.js, and Mo
 
 ## 🚀 Features
 
-### Part 1: User Authentication & Management (60 Minutes)
+### Part 1: User Authentication & Management 
 - **JWT Authentication** with 24-hour token expiry
 - **Session Management** with device tracking and token storage
 - **Forgot Password Flow** with OTP verification (6-digit OTP, 10-minute expiry)
@@ -16,7 +16,7 @@ A production-grade RESTful backend system built with Node.js, Express.js, and Mo
 - **Middleware-based protected routes**
 - **Multi-device session tracking** with logout from all devices
 
-### Part 2: Task Management (70 Minutes)
+### Part 2: Task Management 
 - **CRUD Operations** for tasks with role-based permissions
 - **Task Creation** (manager/admin only)
 - **Task Assignment** and status tracking (pending, in_progress, completed)
@@ -26,7 +26,7 @@ A production-grade RESTful backend system built with Node.js, Express.js, and Mo
 - **Sorting** by dueDate, priority, createdAt
 - **Pagination** using page and limit
 
-### Part 3: Comments & Activity Tracking (40 Minutes)
+### Part 3: Comments & Activity Tracking 
 - **Task Comments** with CRUD operations
 - **Activity Logging** for all user actions (created, updated, completed, commented)
 - **IP Address and User Agent tracking**
@@ -43,7 +43,7 @@ A production-grade RESTful backend system built with Node.js, Express.js, and Mo
 - **Inactive User Detection** (hourly, 1min for testing)
 - **Overdue Task Reminder** (bonus feature, 5min for testing)
 
-### Part 6: Advanced Features (20 Minutes)
+### Part 6: Advanced Features 
 - **Rate Limiting** (100 requests / 15 minutes / IP)
 - **Security Headers** via Helmet middleware
 - **CORS Protection** with configurable origins
@@ -235,50 +235,6 @@ The platform includes comprehensive testing suites to ensure API reliability and
 - **Metrics Tests** - Daily metrics, summaries, manual aggregation
 - **User Management Tests** - User CRUD, role management, statistics
 
-**Running Tests:**
-```bash
-# Install test dependencies
-npm install --save-dev jest supertest mongodb-memory-server
-
-# Run all tests
-npm test
-
-# Run specific test suite
-npm test -- --testPathPattern=auth.test.js
-
-# Run tests with coverage report
-npm run test:coverage
-
-# Watch mode for development
-npm run test:watch
-
-# Run comprehensive test runner
-node tests/run-tests.js
-```
-
-### cURL Testing Script
-
-**Comprehensive API testing with real HTTP requests:**
-```bash
-# Make script executable
-chmod +x tests/curl-tests.sh
-
-# Run all cURL tests (requires server to be running)
-./tests/curl-tests.sh
-
-# Prerequisites: curl and jq must be installed
-# Ubuntu: sudo apt-get install curl jq
-# macOS: brew install curl jq
-```
-
-**The cURL script tests:**
-- All authentication flows (register, login, profile management)
-- Task management operations (create, read, update, delete, complete)
-- Comments and activity tracking (add, update, like, reply, delete)
-- Analytics endpoints (overview, user productivity, trends, workload)
-- Metrics APIs (daily metrics, summaries, aggregation)
-- User management (CRUD operations, role updates, statistics)
-- Error scenarios (invalid tokens, unauthorized access, validation errors)
 
 ### Sample User Accounts (after seeding)
 - **Admin**: admin@example.com / admin123
